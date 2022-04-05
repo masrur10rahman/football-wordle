@@ -1,96 +1,132 @@
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>FOOTBALL WORDLE</title>
-		<link rel="stylesheet" href="style/style.css" />
-		<link
-			rel="stylesheet"
-			href="style/font-awesome.min.css"
-		/>
-	</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FOOTBALL WORDLE</title>
+        <link rel="stylesheet" href="style/font-awesome.min.css" />
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
 
-	<body>
-		<header>Football Wordle</header>
-		<section class="boxcontainer">
-			<div class="innerbox">
-				<table class="container">
-					<tr class="row">
-						<td class="head box"></td>
-						<td class="head box">Country</td>
-						<td class="head box">Club</td>
-						<td class="head box">FUT Rating</td>
-						<td class="head box">Jersey Number</td>
-						<td class="head box">Position</td>
-					</tr>
-					<tr class="row player1">
-						<td class="indicator column box">Player 1</td>
-						<td class="country1 column box"></td>
-						<td class="club1 column box"></td>
-						<td class="fut1 column box"></td>
-						<td class="jer1 column box"></td>
-						<td class="pos1 column box"></td>
-					</tr>
-					<tr class="row player2">
-						<td class="indicator column box">Player 2</td>
-						<td class="country2 column box"></td>
-						<td class="club2 column box"></td>
-						<td class="fut2 column box"></td>
-						<td class="jer2 column box"></td>
-						<td class="pos2 column box"></td>
-					</tr>
-					<tr class="row player3">
-						<td class="indicator column box">Player 3</td>
-						<td class="country3 column box"></td>
-						<td class="club3 column box"></td>
-						<td class="fut3 column box"></td>
-						<td class="jer3 column box"></td>
-						<td class="pos3 column box"></td>
-					</tr>
-					<tr class="row player4">
-						<td class="indicator column box">Player 4</td>
-						<td class="country4 column box"></td>
-						<td class="club4 column box"></td>
-						<td class="fut4 column box"></td>
-						<td class="jer4 column box"></td>
-						<td class="pos4 column box"></td>
-					</tr>
-					<tr class="row player5">
-						<td class="indicator column box">Player 5</td>
-						<td class="country5 column box"></td>
-						<td class="club5 column box"></td>
-						<td class="fut5 column box"></td>
-						<td class="jer5 column box"></td>
-						<td class="pos5 column box"></td>
-					</tr>
-					<tr class="row player6">
-						<td class="indicator column box">Player 6</td>
-						<td class="country6 column box"></td>
-						<td class="club6 column box"></td>
-						<td class="fut6 column box"></td>
-						<td class="jer6 column box"></td>
-						<td class="pos6 column box"></td>
-					</tr>
-				</table>
-			</div>
-		</section>
-		<section class="guesser">
-			<div class="innerguess">
-				<b>Guess the players name : </b><br />
-				<span class="bar">
-					<i class="fa-solid fa-magnifying-glass"> </i>
-					<input list="players" name="player" placeholder=" Search" />
-					<datalist id="players"></datalist>
-				</span>
-				<button>Guess</button>
-			</div>
-		</section>
-		<footer>
-			<div class="fa fa-external-link-square" area-hidden="true">
-				<a href="https://www.footble-game.com"> Inspired from this</a>
-			</div>
-		</footer>
-		<script src="script/main.js"></script>
-	</body>
+    <body>
+        <header>Football Wordle</header>
+        <!-- <nav class="navbar">
+            <div class="navicon">
+                <input type="checkbox" id="toggler" style="color: red;border-radius: 50%;"/>
+            </div>
+            <div class="navcontent" hidden>
+                <ul>
+                    <li>
+                        <i class="fa fa-gamepad" aria-hidden="true"></i> How to
+                        play
+                    </li>
+                    <li>
+                        <i class="fa fa-users" aria-hidden="true"></i> Players
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/masrur10rahman/football-wordle"
+                            target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            Github
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/masrur10rahman"
+                            target="_blank">
+                            <i class="fa fa-id-badge" aria-hidden="true"></i>
+                            About Me
+                        </a>
+                    </li>
+                    <li class="links">
+                        <i class="fa fa-link" aria-hidden="true"></i> Links
+                        <ul hidden>
+                            <li>Facebook</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+        <section class="boxcontainer">
+            <div class="innerbox">
+                <table class="container">
+                    <tr class="row">
+                        <td class="head box"></td>
+                        <td class="head box">Country</td>
+                        <td class="head box">Club</td>
+                        <td class="head box">FUT Rating</td>
+                        <td class="head box">Jersey Number</td>
+                        <td class="head box">Position</td>
+                    </tr>
+                    <tr class="row player1">
+                        <td class="indicator column box">Player 1</td>
+                        <td class="country1 column box"></td>
+                        <td class="club1 column box"></td>
+                        <td class="fut1 column box"></td>
+                        <td class="jer1 column box"></td>
+                        <td class="pos1 column box"></td>
+                    </tr>
+                    <tr class="row player2">
+                        <td class="indicator column box">Player 2</td>
+                        <td class="country2 column box"></td>
+                        <td class="club2 column box"></td>
+                        <td class="fut2 column box"></td>
+                        <td class="jer2 column box"></td>
+                        <td class="pos2 column box"></td>
+                    </tr>
+                    <tr class="row player3">
+                        <td class="indicator column box">Player 3</td>
+                        <td class="country3 column box"></td>
+                        <td class="club3 column box"></td>
+                        <td class="fut3 column box"></td>
+                        <td class="jer3 column box"></td>
+                        <td class="pos3 column box"></td>
+                    </tr>
+                    <tr class="row player4">
+                        <td class="indicator column box">Player 4</td>
+                        <td class="country4 column box"></td>
+                        <td class="club4 column box"></td>
+                        <td class="fut4 column box"></td>
+                        <td class="jer4 column box"></td>
+                        <td class="pos4 column box"></td>
+                    </tr>
+                    <tr class="row player5">
+                        <td class="indicator column box">Player 5</td>
+                        <td class="country5 column box"></td>
+                        <td class="club5 column box"></td>
+                        <td class="fut5 column box"></td>
+                        <td class="jer5 column box"></td>
+                        <td class="pos5 column box"></td>
+                    </tr>
+                    <tr class="row player6">
+                        <td class="indicator column box">Player 6</td>
+                        <td class="country6 column box"></td>
+                        <td class="club6 column box"></td>
+                        <td class="fut6 column box"></td>
+                        <td class="jer6 column box"></td>
+                        <td class="pos6 column box"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="guesser">
+            <div class="innerguess">
+                <b>Guess the players name : </b><br />
+                <span class="bar">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                    <!-- <input class="searchbox" list="players" name="player" placeholder=" Search" />
+                    <datalist id="players"></datalist> -->
+                    <select name="selector" id="selector"></select>
+                </span>
+                <button>Guess</button>
+            </div>
+        </section>
+        <footer>
+            <div class="fa fa-external-link-square" area-hidden="true">
+                <a href="https://www.footble-game.com"> Inspired from this</a>
+            </div>
+        </footer>
+        <script src="script/main.js"></script>
+    </body>
 </html>
